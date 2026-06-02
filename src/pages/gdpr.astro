@@ -1,0 +1,55 @@
+---
+// src/pages/gdpr.astro
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Ochrana osobných údajov (GDPR) - Ascentia" description="Zásady spracúvania a ochrany osobných údajov pre platformu Ascentia.">
+  <Header />
+
+  <main class="flex-grow py-16">
+    <div class="mx-auto max-w-4xl px-6 md:px-8">
+      <h1 class="text-4xl font-black text-zinc-50 tracking-tight mb-8">Ochrana osobných údajov (GDPR)</h1>
+      
+      <div class="prose prose-invert prose-zinc max-w-none text-zinc-300 space-y-6 text-sm leading-relaxed">
+        <p class="text-xs text-zinc-500">Posledná aktualizácia: 1. januára 2026</p>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-zinc-100">1. Základné pojmy a prevádzkovateľ</h2>
+          <p>
+            Prevádzkovateľom vašich osobných údajov je spoločnosť prevádzkujúca platformu Ascentia. Zodpovedne chránime vaše súkromie a spracúvame osobné údaje v súlade s nariadením GDPR a zákonom o ochrane osobných údajov.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-zinc-100">2. Rozsah a účel spracúvania údajov</h2>
+          <p>
+            Spracúvame iba tie údaje, ktoré sú nevyhnutné na splnenie zmluvných záväzkov a doručenie digitálneho obsahu:
+          </p>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>E-mailová adresa (pre doručenie prístupových údajov a daňových dokladov)</li>
+            <li>Meno a priezvisko (pre fakturačné účely)</li>
+            <li>Telefónne číslo (pre voliteľné prepojenie s WhatsApp botom a zasielanie upozornení)</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-zinc-100">3. WhatsApp integrácia a Meta API</h2>
+          <p>
+            V prípade, že sa rozhodnete pre integráciu študijného programu so službou WhatsApp, telefónne číslo je bezpečne prenášané prostredníctvom šifrovaného API rozhrania na servery spoločnosti Meta Platforms Ireland Ltd. Údaje nie sú využívané na marketingové účely tretích strán.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-bold text-zinc-100">4. Práva dotknutých osôb</h2>
+          <p>
+            V zmysle nariadenia GDPR máte právo na prístup k svojim údajom, ich opravu, vymazanie (právo na zabudnutie), obmedzenie spracúvania, prenosnosť údajov a právo namietať proti spracúvaniu. Vaše požiadavky môžete zaslať na náš kontaktný e-mail.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

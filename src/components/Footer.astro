@@ -1,0 +1,54 @@
+---
+// src/components/Footer.astro
+import WithdrawalModal from './WithdrawalModal.astro';
+---
+<footer class="w-full border-t border-zinc-800 bg-zinc-950 py-12 text-zinc-400">
+  <div class="mx-auto max-w-7xl px-6 md:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-zinc-900 pb-8">
+      <div class="flex items-center gap-3">
+        <img src="/logo.svg" alt="Ascentia Logo" class="h-6 w-6" />
+        <span class="font-black tracking-tighter text-zinc-50 font-sans">
+          ASCENTIA
+        </span>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+        <a href="/" class="hover:text-zinc-50 transition-colors">Domov</a>
+        <a href="/vop" class="hover:text-zinc-50 transition-colors">VOP</a>
+        <a href="/gdpr" class="hover:text-zinc-50 transition-colors">GDPR</a>
+        <!-- EU 2026 Online Contract Withdrawal Trigger -->
+        <button
+          id="btn-withdrawal-trigger"
+          class="text-zinc-400 hover:text-red-400 transition-colors cursor-pointer text-sm font-medium focus:outline-none"
+        >
+          Odstúpiť od zmluvy online
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 text-xs text-zinc-500">
+      <p>&copy; 2026 Ascentia. Všetky práva vyhradené. AI-First & Jamstack platforma.</p>
+      <p class="flex gap-2">
+        <span>Legislatívna zhoda EÚ 2026</span>
+        <span class="text-emerald-500">&#x25CF; Kompatibilné</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal window for withdrawal -->
+  <WithdrawalModal />
+</footer>
+
+<script>
+  // Script to open modal
+  const triggerBtn = document.getElementById('btn-withdrawal-trigger');
+  const modal = document.getElementById('withdrawal-modal');
+
+  if (triggerBtn && modal) {
+    triggerBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden'; // Lock scrolling
+    });
+  }
+</script>
