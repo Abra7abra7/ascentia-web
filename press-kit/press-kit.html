@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASCENTIA — Press Kit</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #002147;
+      color: #E8E8F0;
+      line-height: 1.6;
+      padding: 0;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+    header {
+      text-align: center;
+      padding: 60px 24px 40px;
+      background: linear-gradient(180deg, #001530 0%, #002147 100%);
+      border-bottom: 1px solid rgba(205, 127, 50, 0.2);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 300;
+      letter-spacing: 6px;
+      color: #E8E8F0;
+    }
+    header h1 strong {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-weight: 700;
+      background: linear-gradient(135deg, #E8B86D, #CD7F32, #B87333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header .tagline {
+      font-size: 0.85rem;
+      letter-spacing: 5px;
+      color: #CD7F32;
+      opacity: 0.7;
+      margin-top: 8px;
+      text-transform: uppercase;
+    }
+    header .sub {
+      font-size: 0.9rem;
+      color: #A0A0B8;
+      margin-top: 12px;
+      letter-spacing: 2px;
+    }
+    .section {
+      margin: 48px 0;
+    }
+    .section h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #E8B86D;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(205, 127, 50, 0.25);
+    }
+    .section h2 small {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #A0A0B8;
+      letter-spacing: 1px;
+      text-transform: none;
+      margin-left: 12px;
+    }
+    .asset-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .asset-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(205, 127, 50, 0.15);
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 0.2s;
+    }
+    .asset-card:hover { border-color: rgba(205, 127, 50, 0.4); }
+    .asset-card .preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 140px;
+      background: rgba(0, 21, 48, 0.5);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .asset-card .preview svg { max-width: 100%; max-height: 130px; }
+    .asset-card .preview img {
+      max-width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+    .asset-card .preview.img-sq { min-height: 200px; }
+    .asset-card .meta { font-size: 0.85rem; }
+    .asset-card .meta .name {
+      font-weight: 600;
+      color: #E8E8F0;
+      word-break: break-all;
+    }
+    .asset-card .meta .desc {
+      color: #A0A0B8;
+      margin-top: 4px;
+      font-size: 0.8rem;
+    }
+    .asset-card .meta .size {
+      color: #6B7280;
+      margin-top: 2px;
+      font-size: 0.75rem;
+    }
+    .banner-card {
+      grid-column: span 1;
+    }
+    .banner-card .preview img { max-height: 100px; width: 100%; object-fit: cover; border-radius: 4px; }
+    .color-swatch {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .color-swatch .swatch {
+      width: 100%;
+      height: 60px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .color-swatch .label { font-size: 0.8rem; text-align: center; }
+    .color-swatch .label .hex { color: #A0A0B8; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .info-item {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(205, 127, 50, 0.15);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .info-item .label { font-size: 0.75rem; color: #A0A0B8; text-transform: uppercase; letter-spacing: 1px; }
+    .info-item .value { font-size: 1rem; color: #E8E8F0; margin-top: 4px; }
+    .info-item .value a { color: #CD7F32; text-decoration: none; }
+    .info-item .value a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #6B7280;
+      font-size: 0.8rem;
+      border-top: 1px solid rgba(205, 127, 50, 0.1);
+    }
+    @media (max-width: 640px) {
+      header h1 { font-size: 1.8rem; }
+      .asset-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><strong>A</strong>SCENTIA</h1>
+    <div class="tagline">AUTONOMOUS COMPANY</div>
+    <div class="sub">Press Kit &bull; Brand Assets &bull; 2026</div>
+  </header>
+  <div class="container">
+
+    <!-- Company Info -->
+    <div class="section">
+      <h2>Company Info</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="label">Company Name</div>
+          <div class="value">ASCENTIA s. r. o.</div>
+        </div>
+        <div class="info-item">
+          <div class="label">IČO</div>
+          <div class="value">51858959</div>
+        </div>
+        <div class="info-item">
+          <div class="label">DIČ</div>
+          <div class="value">2120816071</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Website</div>
+          <div class="value"><a href="https://ascentia.sk" target="_blank">ascentia.sk</a></div>
+        </div>
+        <div class="info-item">
+          <div class="label">CEO</div>
+          <div class="value">Marián Stančík</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Tagline EN</div>
+          <div class="value" style="font-family: 'JetBrains Mono', monospace; font-size:0.85rem;">Build better. Stay legal.</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Tagline SK</div>
+          <div class="value" style="font-family: 'JetBrains Mono', monospace; font-size:0.85rem;">AI kód, ktorý prejde auditom.</div>
+        </div>
+        <div class="info-item">
+          <div class="label">X / Twitter</div>
+          <div class="value"><a href="https://x.com/abraka_d7" target="_blank">@abraka_d7</a></div>
+        </div>
+        <div class="info-item">
+          <div class="label">LinkedIn</div>
+          <div class="value"><a href="https://linkedin.com/in/marian-stancik" target="_blank">/in/marian-stancik</a></div>
+        </div>
+        <div class="info-item">
+          <div class="label">GitHub</div>
+          <div class="value"><a href="https://github.com/Abra7abra7" target="_blank">Abra7abra7</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brand Colors -->
+    <div class="section">
+      <h2>Brand Colours <small>Hex values</small></h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px;">
+        <div class="color-swatch">
+          <div class="swatch" style="background:#002147;"></div>
+          <div class="label">Polar <span class="hex">#002147</span></div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch" style="background:#003166;"></div>
+          <div class="label">Polar Light <span class="hex">#003166</span></div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch" style="background:#001530;"></div>
+          <div class="label">Polar Dark <span class="hex">#001530</span></div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch" style="background:#CD7F32;"></div>
+          <div class="label">Kyberbronz <span class="hex">#CD7F32</span></div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch" style="background:#E8B86D;"></div>
+          <div class="label">Bronze Light <span class="hex">#E8B86D</span></div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch" style="background:#B87333;"></div>
+          <div class="label">Bronze Dark <span class="hex">#B87333</span></div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch" style="background:#E8E8F0;"></div>
+          <div class="label">Text Light <span class="hex">#E8E8F0</span></div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch" style="background:#A0A0B8;"></div>
+          <div class="label">Text Dark <span class="hex">#A0A0B8</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Variants -->
+    <div class="section">
+      <h2>Logos <small>SVG vector variants</small></h2>
+      <div class="asset-grid">
+        <div class="asset-card">
+          <div class="preview">
+            <svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="aBig1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8B86D"/><stop offset="35%" stop-color="#CD7F32"/><stop offset="100%" stop-color="#B87333"/></linearGradient>
+                <linearGradient id="scentiaGrad1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8E8F0"/><stop offset="100%" stop-color="#A0A0B8"/></linearGradient>
+              </defs>
+              <text x="65" y="90" font-family="'Times New Roman', Georgia, serif" font-size="96" font-weight="700" fill="url(#aBig1)" text-anchor="middle">A</text>
+              <text x="140" y="67" font-family="'Times New Roman', Georgia, serif" font-size="34" font-weight="400" letter-spacing="10" fill="url(#scentiaGrad1)">SCENTIA</text>
+              <text x="140" y="86" font-family="'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="300" letter-spacing="5" fill="#CD7F32" opacity="0.7">AUTONOMOUS COMPANY</text>
+              <line x1="140" y1="94" x2="340" y2="94" stroke="#CD7F32" stroke-width="0.5" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="meta">
+            <div class="name">logo-ascentia-horizontal.svg</div>
+            <div class="desc">Primary horizontal wordmark — web header, documents, business cards</div>
+            <div class="size">500 × 120</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="preview">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="aBig2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8B86D"/><stop offset="35%" stop-color="#CD7F32"/><stop offset="100%" stop-color="#B87333"/></linearGradient>
+                <linearGradient id="scentiaGrad2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8E8F0"/><stop offset="100%" stop-color="#A0A0B8"/></linearGradient>
+              </defs>
+              <text x="100" y="100" font-family="'Times New Roman', Georgia, serif" font-size="100" font-weight="700" fill="url(#aBig2)" text-anchor="middle">A</text>
+              <text x="100" y="130" font-family="'Times New Roman', Georgia, serif" font-size="22" font-weight="400" letter-spacing="12" fill="url(#scentiaGrad2)" text-anchor="middle">SCENTIA</text>
+              <line x1="70" y1="140" x2="130" y2="140" stroke="#CD7F32" stroke-width="0.6" opacity="0.4"/>
+              <text x="100" y="158" font-family="'Helvetica Neue', Arial, sans-serif" font-size="7" font-weight="300" letter-spacing="4" fill="#CD7F32" opacity="0.6" text-anchor="middle">AUTONOMOUS COMPANY</text>
+            </svg>
+          </div>
+          <div class="meta">
+            <div class="name">logo-ascentia-vertical.svg</div>
+            <div class="desc">Vertical stacked logo — mobile, splash screen</div>
+            <div class="size">200 × 200</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="preview">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="bgSq1" cx="45%" cy="40%" r="55%"><stop offset="0%" stop-color="#003166"/><stop offset="60%" stop-color="#002147"/><stop offset="100%" stop-color="#001530"/></radialGradient>
+                <linearGradient id="aBig3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8B86D"/><stop offset="35%" stop-color="#CD7F32"/><stop offset="100%" stop-color="#B87333"/></linearGradient>
+                <linearGradient id="scentiaGrad3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8E8F0"/><stop offset="100%" stop-color="#A0A0B8"/></linearGradient>
+              </defs>
+              <rect x="20" y="20" width="360" height="360" rx="60" fill="url(#bgSq1)"/>
+              <rect x="20" y="20" width="360" height="360" rx="60" fill="none" stroke="#CD7F32" stroke-width="0.8" opacity="0.2"/>
+              <text x="200" y="210" font-family="'Times New Roman', Georgia, serif" font-size="160" font-weight="700" fill="url(#aBig3)" text-anchor="middle">A</text>
+              <text x="200" y="270" font-family="'Times New Roman', Georgia, serif" font-size="40" font-weight="400" letter-spacing="14" fill="url(#scentiaGrad3)" text-anchor="middle">SCENTIA</text>
+              <line x1="120" y1="290" x2="280" y2="290" stroke="#CD7F32" stroke-width="0.8" opacity="0.4"/>
+              <text x="200" y="320" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="300" letter-spacing="5" fill="#CD7F32" opacity="0.6" text-anchor="middle">AUTONOMOUS COMPANY</text>
+            </svg>
+          </div>
+          <div class="meta">
+            <div class="name">logo-ascentia-avatar.svg</div>
+            <div class="desc">Avatar with rounded square background — profile pictures, app icon</div>
+            <div class="size">400 × 400</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="preview">
+            <svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="aWM1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8B86D"/><stop offset="35%" stop-color="#CD7F32"/><stop offset="100%" stop-color="#B87333"/></linearGradient>
+                <linearGradient id="scentiaWM1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8E8F0"/><stop offset="100%" stop-color="#A0A0B8"/></linearGradient>
+              </defs>
+              <text x="50" y="58" font-family="'Times New Roman', Georgia, serif" font-size="60" font-weight="700" letter-spacing="2" fill="url(#aWM1)">A</text>
+              <text x="108" y="58" font-family="'Times New Roman', Georgia, serif" font-size="36" font-weight="400" letter-spacing="8" fill="url(#scentiaWM1)">SCENTIA</text>
+            </svg>
+          </div>
+          <div class="meta">
+            <div class="name">logo-ascentia-wordmark.svg</div>
+            <div class="desc">Clean wordmark (no tagline) — minimal applications</div>
+            <div class="size">400 × 80</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="preview">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="aFav1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8B86D"/><stop offset="35%" stop-color="#CD7F32"/><stop offset="100%" stop-color="#B87333"/></linearGradient>
+              </defs>
+              <text x="50" y="82" font-family="'Times New Roman', Georgia, serif" font-size="84" font-weight="700" fill="url(#aFav1)" text-anchor="middle">A</text>
+              <circle cx="50" cy="90" r="2" fill="#CD7F32" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="meta">
+            <div class="name">logo-ascentia-favicon.svg</div>
+            <div class="desc">Simplified A — favicon, tab icon</div>
+            <div class="size">100 × 100</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PNG Logos -->
+    <div class="section">
+      <h2>Logos <small>PNG raster variants</small></h2>
+      <div class="asset-grid">
+        <div class="asset-card">
+          <div class="preview img-sq"><img src="logos/logo-ascentia-main.png" alt="Main logo PNG"></div>
+          <div class="meta">
+            <div class="name">logo-ascentia-main.png</div>
+            <div class="desc">Primary logo — high resolution PNG</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="preview img-sq"><img src="logos/logo-ascentia-icon.png" alt="Icon PNG"></div>
+          <div class="meta">
+            <div class="name">logo-ascentia-icon.png</div>
+            <div class="desc">App icon — PNG format</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="preview" style="min-height:80px;"><img src="logos/favicon-16.png" alt="Favicon 16"></div>
+          <div class="meta">
+            <div class="name">favicon-16.png</div>
+            <div class="desc">Favicon 16×16</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="preview" style="min-height:80px;"><img src="logos/favicon-32.png" alt="Favicon 32"></div>
+          <div class="meta">
+            <div class="name">favicon-32.png</div>
+            <div class="desc">Favicon 32×32</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="preview" style="min-height:80px;"><img src="logos/favicon-64.png" alt="Favicon 64"></div>
+          <div class="meta">
+            <div class="name">favicon-64.png</div>
+            <div class="desc">Favicon 64×64</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banners -->
+    <div class="section">
+      <h2>Banners &amp; Social Assets <small>PNG</small></h2>
+      <div class="asset-grid">
+        <div class="asset-card banner-card">
+          <div class="preview"><img src="banners/linkedin-banner.png" alt="LinkedIn banner"></div>
+          <div class="meta">
+            <div class="name">linkedin-banner.png</div>
+            <div class="desc">LinkedIn cover banner</div>
+          </div>
+        </div>
+        <div class="asset-card banner-card">
+          <div class="preview"><img src="banners/twitter-banner.png" alt="Twitter banner"></div>
+          <div class="meta">
+            <div class="name">twitter-banner.png</div>
+            <div class="desc">X / Twitter cover banner</div>
+          </div>
+        </div>
+        <div class="asset-card banner-card">
+          <div class="preview"><img src="banners/facebook-cover.png" alt="Facebook cover"></div>
+          <div class="meta">
+            <div class="name">facebook-cover.png</div>
+            <div class="desc">Facebook cover photo</div>
+          </div>
+        </div>
+        <div class="asset-card banner-card">
+          <div class="preview"><img src="banners/facebook-profile.png" alt="Facebook profile"></div>
+          <div class="meta">
+            <div class="name">facebook-profile.png</div>
+            <div class="desc">Facebook profile picture</div>
+          </div>
+        </div>
+        <div class="asset-card banner-card">
+          <div class="preview"><img src="banners/instagram-profile.png" alt="Instagram profile"></div>
+          <div class="meta">
+            <div class="name">instagram-profile.png</div>
+            <div class="desc">Instagram profile picture</div>
+          </div>
+        </div>
+        <div class="asset-card banner-card">
+          <div class="preview"><img src="banners/social-avatar.png" alt="Social avatar"></div>
+          <div class="meta">
+            <div class="name">social-avatar.png</div>
+            <div class="desc">Social avatar (generic)</div>
+          </div>
+        </div>
+        <div class="asset-card banner-card">
+          <div class="preview"><img src="banners/og-image.png" alt="OG image"></div>
+          <div class="meta">
+            <div class="name">og-image.png</div>
+            <div class="desc">Open Graph / social share preview</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Documents -->
+    <div class="section">
+      <h2>Documents</h2>
+      <div class="asset-grid">
+        <div class="asset-card">
+          <div class="meta">
+            <div class="name">BRAND-MANUAL.md</div>
+            <div class="desc">Complete brand manual — colours, typography, logo usage, brand story, tone of voice</div>
+          </div>
+        </div>
+        <div class="asset-card">
+          <div class="meta">
+            <div class="name">COMPANY-INFO.md</div>
+            <div class="desc">Company details, description (SK/EN), services, team, social links</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    ASCENTIA s. r. o. &bull; IČO: 51858959 &bull; DIČ: 2120816071 &bull; <a href="https://ascentia.sk" style="color:#CD7F32;text-decoration:none;">ascentia.sk</a>
+  </footer>
+</body>
+</html>
