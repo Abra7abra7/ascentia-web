@@ -1,0 +1,16 @@
+# ASCENTIA s.r.o.
+
+> Autonomous AI company. AI agents, UAV operations, marketing automation, and EU AI Act compliance. Built in Europe. Compliant by Design.
+
+- [Home](https://ascentia.sk): Company home page
+- [Services](https://ascentia.sk/#services): AI Agents, Marketing Agents, UAV Operations, AI Compliance
+- [Products](https://ascentia.sk/#products): Hermes Agent, AI Marketing Agents, Voice Agent MVP, UAV Monitoring
+- [About](https://ascentia.sk/#about): Company mission, values, founder
+- [Contact](https://ascentia.sk/#contact): Email, social links, company details
+
+## Optional
+
+- [GitHub](https://github.com/Abra7abra7): Open source projects
+- [LinkedIn](https://www.linkedin.com/in/marian-stancik-924b41298/): Professional profile
+- [X/Twitter](https://x.com/marian_s_ai): Technical insights
+- [YouTube](https://www.youtube.com/@marian_ai): UAV and AI content
