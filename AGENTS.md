@@ -4,6 +4,11 @@
 **Domain:** ascentia.sk (Vercel)  
 **Repo:** https://github.com/Abra7abra7/ascentia-web  
 **IČO:** 51858959  
+**DIČ:** 2120700340  
+**IČ DPH:** SK2120700340  
+**Sídlo:** Klincová 37/B, 821 08 Bratislava - Ružinov  
+**Zápis:** Obchodný register Mestského súdu Bratislava III, oddiel Sro, vložka č. 130384/B  
+**Deň zápisu:** 02.08.2018  
 **Brand:** Polar #002147 + Kyberbronz #CD7F32  
 **Tón:** Professional, authoritative, B2B — no marketing fluff  
 
