@@ -26,9 +26,18 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@marian_s_ai">
 <meta name="twitter:image" content="https://ascentia.sk/og-image.webp">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Fonts: self-hosted WOFF2 (no external CDN for GDPR compliance) -->
+<style>
+/* Font-face declarations will be added when font files are available */
+/* Fallback: system fonts */
+body { font-family: Georgia, 'Times New Roman', serif; }
+.inter, .section-label, .btn, nav a, .stat-label, .hero-tagline,
+.product-price, .form-label, .contact-details, .footer-tagline,
+.footer-col, .footer-bottom, .value-item h4, .value-item p,
+.service-card p, .service-card ul, .product-card ul,
+.social-link, input, textarea { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, .hero-logo { font-family: Georgia, 'Times New Roman', serif; }
+</style>
 <link rel="stylesheet" href="/css/main.css">
 
 <script type="application/ld+json">
@@ -356,6 +365,11 @@
         </div>
         <button type="submit" class="btn btn-primary" id="formSubmit">Odoslať správu</button>
         <div class="form-status" id="formStatus"></div>
+        <p style="font-size: 0.75rem; color: #666; margin-top: 0.5rem;">
+          Odoslaním formuláru súhlasíte so spracovaním Vašich osobných údajov
+          za účelom odpovede na Vašu správu. Viac informácií v
+          <a href="/privacy" style="color: var(--kyberbronz);">Zásadách ochrany osobných údajov</a>.
+        </p>
       </form>
     </div>
   </div>
@@ -408,6 +422,13 @@
     <div class="footer-divider">
       <p>© 2026 <a href="https://ascentia.sk">ASCENTIA s.r.o.</a> — <span id="fMotto">Build better. Stay legal.</span></p>
       <p class="footer-tag">Built with <span class="bronze">✦</span> by Hermes Agent</p>
+    </div>
+    <div class="footer-divider" style="border-top: none; padding-top: 0.5rem;">
+      <p style="font-size: 0.7rem; color: rgba(255,255,255,0.4); max-width: 100%;">
+        ⚖️ V súlade s Nariadením (EÚ) 2024/1689 (AI Act): Niektoré služby uvedené na tejto stránke
+        zahŕňajú systémy umelej inteligencie určené na interakciu s fyzickými osobami.
+        <a href="/privacy" style="color: var(--kyberbronz-light); text-decoration: underline;">Zásady ochrany údajov</a>
+      </p>
     </div>
   </div>
 </footer>
