@@ -8,6 +8,8 @@
 - [About](https://ascentia.sk/about): Company mission, founder bio (Marian Stancik), values, company details (IČO 51858959)
 - [Contact](https://ascentia.sk/contact): Contact form, email, company info, social links (X, GitHub, LinkedIn, YouTube)
 - [Privacy Policy](https://ascentia.sk/privacy): GDPR-compliant privacy policy (Slovak)
+- [Disclaimer](https://ascentia.sk/disclaimer): Legal disclaimer — liability limitation for AI-generated content
+- [Terms of Service](https://ascentia.sk/terms): Terms of Service — binding conditions of use
 
 ## Optional
 
