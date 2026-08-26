@@ -1,16 +1,19 @@
 # ASCENTIA s.r.o.
 
-> Autonomous AI company. AI agents, UAV operations, marketing automation, and EU AI Act compliance. Built in Europe. Compliant by Design.
+> Autonomous AI company providing AI agents, UAV operations, marketing automation, and EU AI Act compliance. Built in Europe. Compliant by Design. Founded 2018, based in Bratislava, Slovakia.
 
-- [Home](https://ascentia.sk): Company home page
-- [Services](https://ascentia.sk/#services): AI Agents, Marketing Agents, UAV Operations, AI Compliance
-- [Products](https://ascentia.sk/#products): Hermes Agent, AI Marketing Agents, Voice Agent MVP, UAV Monitoring
-- [About](https://ascentia.sk/#about): Company mission, values, founder
-- [Contact](https://ascentia.sk/#contact): Email, social links, company details
+- [Home](https://ascentia.sk): Company home page — hero, stats, contact form
+- [Services](https://ascentia.sk/services): AI Agents & Automation, AI Marketing Agents, UAV Operations & Edge AI, AI Compliance & Legal-by-Design
+- [Products](https://ascentia.sk/products): Hermes Agent (€1,500+€500/mo), AI Marketing Agents (€1,150+€265/mo), Voice Agent MVP (€800+€165/mo), UAV Monitoring (€180/2h)
+- [About](https://ascentia.sk/about): Company mission, founder bio (Marian Stancik), values, company details (IČO 51858959)
+- [Contact](https://ascentia.sk/contact): Contact form, email, company info, social links (X, GitHub, LinkedIn, YouTube)
+- [Privacy Policy](https://ascentia.sk/privacy): GDPR-compliant privacy policy (Slovak)
 
 ## Optional
 
-- [GitHub](https://github.com/Abra7abra7): Open source projects
-- [LinkedIn](https://www.linkedin.com/in/marian-stancik-924b41298/): Professional profile
-- [X/Twitter](https://x.com/marian_s_ai): Technical insights
-- [YouTube](https://www.youtube.com/@marian_ai): UAV and AI content
+- [GitHub](https://github.com/Abra7abra7): Open source projects and repositories
+- [LinkedIn](https://www.linkedin.com/in/marian-stancik-924b41298/): Professional profile of CEO Marian Stancik
+- [X/Twitter](https://x.com/marian_s_ai): Technical insights and AI development updates
+- [YouTube](https://www.youtube.com/@marian_ai): UAV, drone and AI engineering content
+- [Sitemap](https://ascentia.sk/sitemap.xml): Complete site structure
+- [Robots](https://ascentia.sk/robots.txt): AI crawler permissions

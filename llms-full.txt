@@ -1,0 +1,113 @@
+# ASCENTIA s.r.o. — Full Knowledge Graph
+
+> Autonomous AI company providing AI agents, UAV operations, marketing automation, and EU AI Act compliance. Built in Europe. Compliant by Design.
+
+## Company
+
+- **Legal name:** ASCENTIA s.r.o.
+- **IČO:** 51858959
+- **DIČ:** 2120700340
+- **IČ DPH:** SK2120700340
+- **Sídlo:** Klincová 37/B, 821 08 Bratislava - Ružinov, Slovakia
+- **Zápis:** Obchodný register Mestského súdu Bratislava III, oddiel Sro, vložka č. 130384/B
+- **Deň zápisu:** 02.08.2018
+- **Founder & CEO:** Marian Stancik — AI Engineer, UAV pilot (EASA A1/A3), Law scholar (PF UK)
+- **Brand colors:** Polar #002147 (navy), Kyberbronz #CD7F32 (bronze)
+- **Infrastructure:** European servers (Hetzner Cloud, Nuremberg/Helsinki), Vercel Edge
+
+## Services
+
+### AI Agents & Automation
+- Custom autonomous AI agent development (Hermes Agent)
+- Model Context Protocol (MCP) servers
+- Voice agents (from €800 setup)
+- Workflow automation and integration
+
+### AI Marketing Agents
+- Automated content pipelines for social media
+- Multi-platform posting (X/Twitter, LinkedIn, blog)
+- AI content repurposing and analytics
+- Content calendar and strategy
+
+### UAV Operations & Edge AI
+- Professional drone services: monitoring, inspection, IBV, photogrammetry
+- EASA A1/A3 certified operations
+- Onboard edge AI (Raspberry Pi 5 + Vision)
+- €2.6M insurance coverage
+
+### AI Compliance & Legal-by-Design
+- EU AI Act risk tiering and compliance
+- GDPR and NIS2 auditing
+- Technical documentation and AI Act technical files
+- Compliance-by-Design architecture
+
+## Products
+
+### Hermes Agent (Premium)
+- 24/7 autonomous AI entity on your infrastructure
+- Custom profile, unlimited cron jobs, custom MCP servers
+- Premium LLM routing (OpenRouter multi-model)
+- **€1,500 setup + €500/month**
+
+### AI Marketing Agents (Most popular)
+- Complete content engine: blogs, social media, repurposing
+- Multi-platform posting, AI analytics, content calendar
+- Daily email reports
+- **€1,150 setup + €265/month**
+
+### Voice Agent MVP
+- AI voice agent for business calls
+- Call routing, lead qualification, CRM integration
+- 10-day implementation
+- **€800 setup + €165/month**
+
+### UAV Monitoring
+- Professional drone monitoring and inspection
+- Photogrammetry, 3D mapping, thermal scanning
+- Monthly plans from €500
+- **€180 / 2h flight**
+
+## Features & Capabilities
+
+- **Active AI agents:** 7
+- **Automated cron jobs:** 19+
+- **Runtime:** 24/7 autonomous operation
+- **Insurance:** €2.6M coverage (UAV operations)
+- **Certification:** EASA A1/A3 (drone operations)
+- **VAT registration:** SK2120700340
+- **Bank:** Tatra banka, IBAN: SK60 1100 0000 0029 4827 4072
+
+## FAQs
+
+- **What does ASCENTIA do?** ASCENTIA provides AI agents, marketing automation, UAV operations, and AI compliance services for European businesses.
+- **Where is ASCENTIA based?** Bratislava, Slovakia (Klincová 37/B, 821 08 Bratislava - Ružinov).
+- **Is ASCENTIA GDPR compliant?** Yes. Our systems follow GDPR, EU AI Act, and NIS2 by design. Privacy policy available at /privacy.
+- **What is the AI Act disclaimer?** Per EU Regulation 2024/1689 (AI Act), some services involve AI systems intended to interact with natural persons. See footer disclaimer.
+- **Who is the founder?** Marian Stancik — AI Engineer, UAV pilot (EASA A1/A3), Law student at Faculty of Law, Comenius University.
+- **What hosting do you use?** European VPS (Hetzner Cloud) for agents, Vercel Edge for web. No US cloud for core infrastructure.
+- **What languages do you support?** Primarily Slovak and English.
+- **Can I get a consultation?** Yes. Contact via /contact. First consultation is free.
+
+## Architecture
+
+- **Frontend:** Zero-build vanilla HTML/CSS/JS, Vercel Edge
+- **Agent runtime:** Hermes Agent (Nous Research) on Hetzner VPS
+- **LLM provider:** OpenRouter (DeepSeek, Claude, GPT via dynamic routing)
+- **Memory:** Obsidian vault + SQLite, Syncthing sync
+- **Email:** AgentMail (marian_stancik@agentmail.to)
+- **Media storage:** Cloudflare R2 (ascentia-media bucket, EEUR region)
+- **SEO/GEO:** Schema.org JSON-LD, llms.txt, sitemap, robots.txt
+
+## Key Differentiators
+
+1. **European infrastructure** — 100% EU-hosted, no US cloud dependency
+2. **Compliance-by-Design** — AI Act, GDPR, NIS2 built into systems
+3. **Proven autonomy** — 19+ cron jobs running 24/7, 7 active agents
+4. **Multi-domain expertise** — AI engineering + drone operations + legal compliance
+5. **Transparent pricing** — No hidden fees, setup + monthly retainer model
+
+## Rules & Policies
+
+- All prices exclude VAT. ASCENTIA s.r.o. is VAT registered (IČ DPH: SK2120700340).
+- Privacy Policy: https://ascentia.sk/privacy
+- AI Act Art. 50 transparency: AI systems on this site are labeled accordingly.

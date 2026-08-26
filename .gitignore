@@ -3,3 +3,5 @@ node_modules/
 .DS_Store
 test_screenshots/
 *.png
+.vercel
+.env*

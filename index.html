@@ -101,6 +101,52 @@ h1, h2, h3, h4, .hero-logo { font-family: Georgia, 'Times New Roman', serif; }
       "name": "UAV Operations & Edge AI",
       "provider": { "@id": "https://ascentia.sk/#organization" },
       "description": "Drone monitoring, inspection, IBV, mapping. EASA A1/A3 certified, €2.6M insured."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ascentia.sk/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Co robi ASCENTIA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ASCENTIA poskytuje AI agentov, marketingovu automatizaciu, UAV operacie a AI compliance pre europske firmy. Vsetky systemy su navrhnute tak, aby spnali EU AI Act a GDPR."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kde sidli ASCENTIA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bratislava, Klincova 37/B, 821 08 Bratislava - Ruzinov, Slovensko."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Je ASCENTIA GDPR kompliantna?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ano. Vsetky systemy su postavene na principe Compliance-by-Design. GDPR, EU AI Act a NIS2 su sucastou architektury od prveho commitu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Aku infrastrukturu pouzivate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "100% europske cloudy. Hetzner Cloud (Nurnberg/Helsinki) pre agentov a runtime, Vercel Edge pre web. Ziadne USA cloudy pre klucovu infrastrukturu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ake su ceny vasich služieb?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ceny su transparentne: Hermes Agent €1,500 setup + €500/mo, AI Marketing Agents €1,150 setup + €265/mo, Voice Agent MVP €800 setup + €165/mo, UAV Monitoring od €180/2h. Vsetky ceny su bez DPH."
+          }
+        }
+      ]
     }
   ]
 }
@@ -376,6 +422,63 @@ h1, h2, h3, h4, .hero-logo { font-family: Georgia, 'Times New Roman', serif; }
           <a href="/privacy" style="color: var(--kyberbronz);">Zásadách ochrany osobných údajov</a>.
         </p>
       </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" aria-label="Často kladené otázky" style="background: var(--biela);">
+  <div class="container">
+    <div class="section-heading">
+      <div class="section-label fade-in">✦ FAQ</div>
+      <h2 class="fade-in">Často kladené otázky</h2>
+    </div>
+    <div class="faq-list fade-in" style="max-width: 800px; margin: 0 auto;">
+      <details class="faq-item" style="background: var(--pure-white); border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 0.75rem; padding: 1.25rem; cursor: pointer; transition: border-color 0.2s;">
+        <summary style="font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--obsidian); outline: none; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+          <span>Čo robí ASCENTIA?</span>
+          <span style="color: var(--kyberbronz); font-size: 1.2rem; transition: transform 0.2s;">+</span>
+        </summary>
+        <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--obsidian-light); margin-top: 0.75rem; line-height: 1.7;">
+          ASCENTIA poskytuje AI agentov, marketingovú automatizáciu, UAV operácie a AI compliance pre európske firmy. Všetky systémy sú navrhnuté tak, aby spĺňali EU AI Act, GDPR a NIS2 — od prvého commitu.
+        </p>
+      </details>
+      <details class="faq-item" style="background: var(--pure-white); border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 0.75rem; padding: 1.25rem; cursor: pointer; transition: border-color 0.2s;">
+        <summary style="font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--obsidian); outline: none; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+          <span>Kde sídli ASCENTIA?</span>
+          <span style="color: var(--kyberbronz); font-size: 1.2rem; transition: transform 0.2s;">+</span>
+        </summary>
+        <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--obsidian-light); margin-top: 0.75rem; line-height: 1.7;">
+          Klincová 37/B, 821 08 Bratislava - Ružinov, Slovensko. Zapísaná v Obchodnom registri Mestského súdu Bratislava III, oddiel Sro, vložka č. 130384/B. IČO: 51858959, DIČ: 2120700340.
+        </p>
+      </details>
+      <details class="faq-item" style="background: var(--pure-white); border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 0.75rem; padding: 1.25rem; cursor: pointer; transition: border-color 0.2s;">
+        <summary style="font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--obsidian); outline: none; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+          <span>Je ASCENTIA GDPR kompliantná?</span>
+          <span style="color: var(--kyberbronz); font-size: 1.2rem; transition: transform 0.2s;">+</span>
+        </summary>
+        <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--obsidian-light); margin-top: 0.75rem; line-height: 1.7;">
+          Áno. Compliance-by-Design je základný princíp všetkých našich systémov. Spracúvanie osobných údajov je v súlade s Nariadením (EÚ) 2016/679 (GDPR) a Zákonom č. 18/2018 Z.z. Viac v <a href="/privacy" style="color: var(--kyberbronz); text-decoration: underline;">Zásadách ochrany osobných údajov</a>.
+        </p>
+      </details>
+      <details class="faq-item" style="background: var(--pure-white); border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 0.75rem; padding: 1.25rem; cursor: pointer; transition: border-color 0.2s;">
+        <summary style="font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--obsidian); outline: none; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+          <span>Akú infraštruktúru používate?</span>
+          <span style="color: var(--kyberbronz); font-size: 1.2rem; transition: transform 0.2s;">+</span>
+        </summary>
+        <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--obsidian-light); margin-top: 0.75rem; line-height: 1.7;">
+          100% európske cloudy. Hertner Cloud (Nürnberg/Helsinki) pre agentov a runtime, Vercel Edge pre webové stránky. Žiadne USA cloudy pre kľúčovú infraštruktúru.
+        </p>
+      </details>
+      <details class="faq-item" style="background: var(--pure-white); border: 1px solid var(--border-light); border-radius: var(--radius-md); margin-bottom: 0.75rem; padding: 1.25rem; cursor: pointer; transition: border-color 0.2s;">
+        <summary style="font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--obsidian); outline: none; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+          <span>Ako môžem začať spolupracovať?</span>
+          <span style="color: var(--kyberbronz); font-size: 1.2rem; transition: transform 0.2s;">+</span>
+        </summary>
+        <p style="font-family: 'Inter', sans-serif; font-size: 0.85rem; color: var(--obsidian-light); margin-top: 0.75rem; line-height: 1.7;">
+          Stačí vyplniť <a href="/contact" style="color: var(--kyberbronz); text-decoration: underline;">kontaktný formulár</a>. Prvá konzultácia je zdarma a bez záväzkov. Ozveme sa do 24 hodín.
+        </p>
+      </details>
     </div>
   </div>
 </section>
