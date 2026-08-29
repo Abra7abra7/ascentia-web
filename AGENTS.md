@@ -112,7 +112,7 @@ A fully functional, responsive corporate website for ASCENTIA s.r.o. deployed on
 - Stats: 3 domains, 19+ active cron jobs, 24/7 runtime, €2.6M insured
 
 ### 4.5 Contact Section
-- Email: marian_stancik@agentmail.to
+- Email: marianstancik@agentmail.to
 - LinkedIn, GitHub, X/Twitter, YouTube
 - IČO: 51858959, DIČ: 2120700340
 - Tatra banka: SK60 1100 0000 0029 4827 4072

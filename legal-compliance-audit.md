@@ -217,13 +217,13 @@ Create a privacy page (e.g., `/privacy-policy.html`) on both sites with the foll
 <p>
   <!-- marianstancik.dev version -->
   <strong>Marian Stancik</strong><br>
-  Email: marian_stancik@agentmail.to
+  Email: marianstancik@agentmail.to
 </p>
 <p>
   <!-- ascentia.sk version -->
   <strong>ASCENTIA s.r.o.</strong><br>
   IČO: 51858959, DIČ: 2120700340, IČ DPH: SK2120700340<br>
-  Email: marian_stancik@agentmail.to
+  Email: marianstancik@agentmail.to
 </p>
 
 <h2>2. Aké osobné údaje spracúvame</h2>
@@ -259,7 +259,7 @@ Create a privacy page (e.g., `/privacy-policy.html`) on both sites with the foll
   <li>na prenosnosť údajov (Čl. 20 GDPR)</li>
   <li>namietať proti spracúvaniu (Čl. 21 GDPR)</li>
 </ul>
-<p>Svoje práva môžete uplatniť zaslaním e-mailu na: marian_stancik@agentmail.to</p>
+<p>Svoje práva môžete uplatniť zaslaním e-mailu na: marianstancik@agentmail.to</p>
 
 <h2>8. Právo podať sťažnosť</h2>
 <p>Ak sa domnievate, že spracúvanie porušuje GDPR, máte právo podať sťažnosť na:<br>
@@ -268,7 +268,7 @@ Hraničná 12, 820 07 Bratislava<br>
 https://dataprotection.gov.sk</p>
 
 <h2>9. Kontakt</h2>
-<p>Vo všetkých záležitostiach ochrany údajov nás kontaktujte na: marian_stancik@agentmail.to</p>
+<p>Vo všetkých záležitostiach ochrany údajov nás kontaktujte na: marianstancik@agentmail.to</p>
 
 </body>
 </html>

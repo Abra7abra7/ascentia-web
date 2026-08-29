@@ -94,7 +94,7 @@
 - **Agent runtime:** Hermes Agent (Nous Research) on Hetzner VPS
 - **LLM provider:** OpenRouter (DeepSeek, Claude, GPT via dynamic routing)
 - **Memory:** Obsidian vault + SQLite, Syncthing sync
-- **Email:** AgentMail (marian_stancik@agentmail.to)
+- **Email:** AgentMail (marianstancik@agentmail.to)
 - **Media storage:** Cloudflare R2 (ascentia-media bucket, EEUR region)
 - **SEO/GEO:** Schema.org JSON-LD, llms.txt, sitemap, robots.txt
 

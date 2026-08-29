@@ -92,7 +92,7 @@ if (contactForm) {
       }
     } catch (err) {
       status.className = 'form-status error';
-      status.textContent = 'Nastala chyba. Skúste neskôr alebo napíšte priamo na marian_stancik@agentmail.to';
+      status.textContent = 'Nastala chyba. Skúste neskôr alebo napíšte priamo na marianstancik@agentmail.to';
     }
   });
 }
