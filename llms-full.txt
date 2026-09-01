@@ -1,14 +1,14 @@
-# ASCENTIA s.r.o. — Full Knowledge Graph
+# ASCENTIA s. r. o. — Full Knowledge Graph
 
 > Autonomous AI company providing AI agents, UAV operations, marketing automation, and EU AI Act compliance. Built in Europe. Compliant by Design.
 
 ## Company
 
-- **Legal name:** ASCENTIA s.r.o.
+- **Legal name:** ASCENTIA s. r. o.
 - **IČO:** 51858959
-- **DIČ:** 2120700340
-- **IČ DPH:** SK2120700340
-- **Sídlo:** Klincová 37/B, 821 08 Bratislava - Ružinov, Slovakia
+- **DIČ:** 2120816071
+- **IČ DPH:** SK2120816071
+- **Sídlo:** Klincová 37/B, 821 08 Bratislava-Ružinov, Slovakia
 - **Zápis:** Obchodný register Mestského súdu Bratislava III, oddiel Sro, vložka č. 130384/B
 - **Deň zápisu:** 02.08.2018
 - **Founder & CEO:** Marian Stancik — AI Engineer, UAV pilot (EASA A1/A3), Law scholar (PF UK)
@@ -74,13 +74,13 @@
 - **Runtime:** 24/7 autonomous operation
 - **Insurance:** €2.6M coverage (UAV operations)
 - **Certification:** EASA A1/A3 (drone operations)
-- **VAT registration:** SK2120700340
+- **VAT registration:** SK2120816071
 - **Bank:** Tatra banka, IBAN: SK60 1100 0000 0029 4827 4072
 
 ## FAQs
 
 - **What does ASCENTIA do?** ASCENTIA provides AI agents, marketing automation, UAV operations, and AI compliance services for European businesses.
-- **Where is ASCENTIA based?** Bratislava, Slovakia (Klincová 37/B, 821 08 Bratislava - Ružinov).
+- **Where is ASCENTIA based?** Bratislava, Slovakia (Klincová 37/B, 821 08 Bratislava-Ružinov).
 - **Is ASCENTIA GDPR compliant?** Yes. Our systems follow GDPR, EU AI Act, and NIS2 by design. Privacy policy available at /privacy.
 - **What is the AI Act disclaimer?** Per EU Regulation 2024/1689 (AI Act), some services involve AI systems intended to interact with natural persons. See footer disclaimer.
 - **Who is the founder?** Marian Stancik — AI Engineer, UAV pilot (EASA A1/A3), Law student at Faculty of Law, Comenius University.
@@ -108,6 +108,6 @@
 
 ## Rules & Policies
 
-- All prices exclude VAT. ASCENTIA s.r.o. is VAT registered (IČ DPH: SK2120700340).
-- Privacy Policy: https://ascentia.sk/privacy
+- All prices exclude VAT. ASCENTIA s. r. o. is VAT registered (IČ DPH: SK2120816071).
+- Privacy Policy: https://www.ascentia.sk/privacy
 - AI Act Art. 50 transparency: AI systems on this site are labeled accordingly.

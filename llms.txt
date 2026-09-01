@@ -1,15 +1,15 @@
-# ASCENTIA s.r.o.
+# ASCENTIA s. r. o.
 
 > Autonomous AI company providing AI agents, UAV operations, marketing automation, and EU AI Act compliance. Built in Europe. Compliant by Design. Founded 2018, based in Bratislava, Slovakia.
 
-- [Home](https://ascentia.sk): Company home page — hero, stats, contact form
-- [Services](https://ascentia.sk/services): AI Agents & Automation, AI Marketing Agents, UAV Operations & Edge AI, AI Compliance & Legal-by-Design
-- [Products](https://ascentia.sk/products): Hermes Agent (€1,500+€500/mo), AI Marketing Agents (€1,150+€265/mo), Voice Agent MVP (€800+€165/mo), UAV Monitoring (€180/2h)
-- [About](https://ascentia.sk/about): Company mission, founder bio (Marian Stancik), values, company details (IČO 51858959)
-- [Contact](https://ascentia.sk/contact): Contact form, email, company info, social links (X, GitHub, LinkedIn, YouTube)
-- [Privacy Policy](https://ascentia.sk/privacy): GDPR-compliant privacy policy (Slovak)
-- [Disclaimer](https://ascentia.sk/disclaimer): Legal disclaimer — liability limitation for AI-generated content
-- [Terms of Service](https://ascentia.sk/terms): Terms of Service — binding conditions of use
+- [Home](https://www.ascentia.sk): Company home page — hero, stats, contact form
+- [Services](https://www.ascentia.sk/services): AI Agents & Automation, AI Marketing Agents, UAV Operations & Edge AI, AI Compliance & Legal-by-Design
+- [Products](https://www.ascentia.sk/products): Hermes Agent (€1,500+€500/mo), AI Marketing Agents (€1,150+€265/mo), Voice Agent MVP (€800+€165/mo), UAV Monitoring (€180/2h)
+- [About](https://www.ascentia.sk/about): Company mission, founder bio (Marian Stancik), values, company details (IČO 51858959)
+- [Contact](https://www.ascentia.sk/contact): Contact form, email, company info, social links (X, GitHub, LinkedIn, YouTube)
+- [Privacy Policy](https://www.ascentia.sk/privacy): GDPR-compliant privacy policy (Slovak)
+- [Disclaimer](https://www.ascentia.sk/disclaimer): Legal disclaimer — liability limitation for AI-generated content
+- [Terms of Service](https://www.ascentia.sk/terms): Terms of Service — binding conditions of use
 
 ## Optional
 
@@ -17,5 +17,5 @@
 - [LinkedIn](https://www.linkedin.com/in/marian-stancik-924b41298/): Professional profile of CEO Marian Stancik
 - [X/Twitter](https://x.com/marian_s_ai): Technical insights and AI development updates
 - [YouTube](https://www.youtube.com/@marian_ai): UAV, drone and AI engineering content
-- [Sitemap](https://ascentia.sk/sitemap.xml): Complete site structure
-- [Robots](https://ascentia.sk/robots.txt): AI crawler permissions
+- [Sitemap](https://www.ascentia.sk/sitemap.xml): Complete site structure
+- [Robots](https://www.ascentia.sk/robots.txt): AI crawler permissions

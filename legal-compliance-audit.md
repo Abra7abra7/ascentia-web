@@ -1,3 +1,5 @@
+> **Correction (1 September 2026):** RegisterUZ DIČ is **2120816071** (IČ DPH **SK2120816071**). The ID 2120700340 / SK2120700340 previously shown on the site and in this audit was wrong and must not be used.
+
 # Legal Compliance Audit Report
 
 **Date:** August 26, 2026  
@@ -83,8 +85,8 @@ Both sites have a contact form collecting: **name, email, message** → POST to 
 | Requirement | Status | Notes |
 |------------|--------|-------|
 | IČO 51858959 displayed | ✅ **CORRECT** | Shown in contact section and schema.org markup |
-| DIČ 2120700340 displayed | ✅ **CORRECT** | Shown in contact section and schema.org markup |
-| IČ DPH SK2120700340 | ✅ **CORRECT** | Shown in contact section and schema.org markup |
+| DIČ 2120816071 displayed | ✅ **CORRECT** | Shown in contact section and schema.org markup |
+| IČ DPH SK2120816071 | ✅ **CORRECT** | Shown in contact section and schema.org markup |
 | Company name "ASCENTIA s.r.o." | ✅ **CORRECT** | Used consistently throughout site |
 | Registered office address | ❌ **MISSING** | No physical address shown anywhere. Schema.org markup only shows `addressCountry: SK` without street/office address. |
 | Founding date (2018-10-24) | ✅ **PRESENT** | In schema.org markup |
@@ -106,7 +108,7 @@ Both sites have a contact form collecting: **name, email, message** → POST to 
 | Voice Agent MVP | €800 setup + €165/mo | ❌ **No VAT mention** | ❌ **Non-compliant** |
 | UAV Monitoring | €180 / 2h letu | ❌ **No VAT mention** | ❌ **Non-compliant** |
 
-**Requirement:** Per Slovak law (Z. 222/2004 Z.z. o DPH) and EU Consumer Rights Directive, all prices must clearly state whether VAT (DPH) is included or excluded. As a Slovak VAT-registered company (IČ DPH: SK2120700340), ASCENTIA must specify whether prices are with or without VAT.
+**Requirement:** Per Slovak law (Z. 222/2004 Z.z. o DPH) and EU Consumer Rights Directive, all prices must clearly state whether VAT (DPH) is included or excluded. As a Slovak VAT-registered company (IČ DPH: SK2120816071), ASCENTIA must specify whether prices are with or without VAT.
 
 ### 3.2 Seller Identification
 
@@ -114,8 +116,8 @@ Both sites have a contact form collecting: **name, email, message** → POST to 
 |------------|--------|-------|
 | Company name | ✅ **CORRECT** | ASCENTIA s.r.o. |
 | IČO | ✅ **CORRECT** | 51858959 |
-| DIČ | ✅ **CORRECT** | 2120700340 |
-| IČ DPH | ✅ **CORRECT** | SK2120700340 |
+| DIČ | ✅ **CORRECT** | 2120816071 |
+| IČ DPH | ✅ **CORRECT** | SK2120816071 |
 | Registered office | ❌ **MISSING** | No physical address |
 | Register info (Obchodný register) | ❌ **MISSING** | No mention of which register the company is registered in + file number |
 
@@ -222,7 +224,7 @@ Create a privacy page (e.g., `/privacy-policy.html`) on both sites with the foll
 <p>
   <!-- ascentia.sk version -->
   <strong>ASCENTIA s.r.o.</strong><br>
-  IČO: 51858959, DIČ: 2120700340, IČ DPH: SK2120700340<br>
+  IČO: 51858959, DIČ: 2120816071, IČ DPH: SK2120816071<br>
   Email: marianstancik@agentmail.to
 </p>
 
@@ -306,7 +308,7 @@ Add VAT disclaimer near pricing:
 ```html
 <p class="vat-disclaimer" style="font-size: 0.75rem; color: #666; margin-top: 2rem; text-align: center;">
   Všetky ceny sú uvedené bez DPH (DPH bude pridaná podľa platnej sadzby).
-  ASCENTIA s.r.o. je platiteľ DPH (IČ DPH: SK2120700340).
+  ASCENTIA s.r.o. je platiteľ DPH (IČ DPH: SK2120816071).
 </p>
 ```
 
