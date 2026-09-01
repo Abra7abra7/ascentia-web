@@ -4,8 +4,8 @@
 **Domain:** ascentia.sk (Vercel)  
 **Repo:** https://github.com/Abra7abra7/ascentia-web  
 **IČO:** 51858959  
-**DIČ:** 2120700340  
-**IČ DPH:** SK2120700340  
+**DIČ:** 2120816071  
+**IČ DPH:** SK2120816071  
 **Sídlo:** Klincová 37/B, 821 08 Bratislava - Ružinov  
 **Zápis:** Obchodný register Mestského súdu Bratislava III, oddiel Sro, vložka č. 130384/B  
 **Deň zápisu:** 02.08.2018  
@@ -114,7 +114,7 @@ A fully functional, responsive corporate website for ASCENTIA s.r.o. deployed on
 ### 4.5 Contact Section
 - Email: marianstancik@agentmail.to
 - LinkedIn, GitHub, X/Twitter, YouTube
-- IČO: 51858959, DIČ: 2120700340
+- IČO: 51858959, DIČ: 2120816071
 - Tatra banka: SK60 1100 0000 0029 4827 4072
 - GDPR-compliant contact form (Vercel serverless → AgentMail)
 
