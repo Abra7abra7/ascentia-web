@@ -1,4 +1,4 @@
-> **Correction (1 September 2026):** RegisterUZ DIČ is **2120816071** (IČ DPH **SK2120816071**). The ID 2120816071 / SK2120816071 previously shown on the site and in this audit was wrong and must not be used.
+> **Correction (1 September 2026):** RegisterUZ DIČ is **2120816071** (IČ DPH **SK2120816071**). The ID 2120700340 / SK2120700340 previously shown on the site and in this audit was wrong and must not be used.
 
 # Legal Compliance Audit Report
 
