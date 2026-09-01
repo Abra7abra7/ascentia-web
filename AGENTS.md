@@ -1,12 +1,12 @@
 # ASCENTIA Corporate Website
 
 **Owner:** Marian Stancik — CEO @ ASCENTIA s.r.o.  
-**Domain:** ascentia.sk (Vercel)  
+**Domain:** www.ascentia.sk (Vercel)  
 **Repo:** https://github.com/Abra7abra7/ascentia-web  
 **IČO:** 51858959  
 **DIČ:** 2120816071  
-**IČ DPH:** SK2120816071  
-**Sídlo:** Klincová 37/B, 821 08 Bratislava - Ružinov  
+**DPH:** spoločnosť nie je platiteľom DPH  
+**Sídlo:** Klincová 37/B, 821 08 Bratislava-Ružinov  
 **Zápis:** Obchodný register Mestského súdu Bratislava III, oddiel Sro, vložka č. 130384/B  
 **Deň zápisu:** 02.08.2018  
 **Brand:** Polar #002147 + Kyberbronz #CD7F32  
@@ -21,7 +21,7 @@ Corporate website for **ASCENTIA s.r.o.** — an autonomous AI company at the in
 Built on the same zero-build architecture as marianstancik.dev:
 - **Vanilla HTML/CSS/JS** — no frameworks, no build tools
 - **Vercel** deployment (Git push → main)
-- **SEO-first** — schema.org, GEO/llms.txt, sitemap, GA4
+- **SEO-first** — schema.org, GEO/llms.txt, sitemap
 - **Responsive** — mobile-first, iPhone compatible
 - **Security-first** — CSP headers, no credentials in repo
 
@@ -59,7 +59,7 @@ Built on the same zero-build architecture as marianstancik.dev:
 ## 3. Wayfinder Map — Site Plan
 
 ### Destination
-A fully functional, responsive corporate website for ASCENTIA s.r.o. deployed on Vercel at ascentia.sk, following the same architecture as marianstancik.dev. Single-page layout with anchor navigation, or multi-page depending on content depth.
+A fully functional, responsive corporate website for ASCENTIA s.r.o. deployed on Vercel at www.ascentia.sk, following the same architecture as marianstancik.dev. Single-page layout with anchor navigation, or multi-page depending on content depth.
 
 ### Notes
 - Use skills from `mattpocock/skills` for planning (wayfinder, domain-modeling, writing-plans)
@@ -79,7 +79,7 @@ A fully functional, responsive corporate website for ASCENTIA s.r.o. deployed on
 | Pages | Single-page w/ sections vs multi-page TBD (depends on content depth) |
 | Media | Local in `/images/`, WebP + JPEG fallback via `<picture>` |
 | SEO | Schema.org JSON-LD, llms.txt, sitemap.xml, robots.txt |
-| Analytics | GA4 via Google tag (server-side, not cookie-based) |
+| Analytics | None — no gtag / GA4 / cookie banner |
 
 ---
 
@@ -114,7 +114,7 @@ A fully functional, responsive corporate website for ASCENTIA s.r.o. deployed on
 ### 4.5 Contact Section
 - Email: marianstancik@agentmail.to
 - LinkedIn, GitHub, X/Twitter, YouTube
-- IČO: 51858959, DIČ: 2120816071
+- IČO: 51858959, DIČ: 2120816071; spoločnosť nie je platiteľom DPH
 - Tatra banka: SK60 1100 0000 0029 4827 4072
 - GDPR-compliant contact form (Vercel serverless → AgentMail)
 
@@ -262,7 +262,7 @@ Emoji prefix + SK/EN description:
 - [ ] Animations: fade-in on scroll, card hover effects
 - [ ] Playwright visual test
 - [ ] Git push → Vercel
-- [ ] DNS: ascentia.sk → Vercel
+- [ ] DNS: www.ascentia.sk (canonical); apex redirects to www
 
 ---
 
