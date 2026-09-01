@@ -8,7 +8,7 @@
 <meta name="keywords" content="GDPR, ochrana súkromia, osobné údaje, ASCENTIA, privacy policy, Slovensko">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="author" content="ASCENTIA s.r.o.">
-<link rel="canonical" href="https://ascentia.sk/privacy">
+<link rel="canonical" href="https://www.ascentia.sk/privacy">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
 <link rel="shortcut icon" href="/favicon.ico">
@@ -16,19 +16,26 @@
 <meta name="theme-color" content="#002147">
 <meta property="og:title" content="Ochrana súkromia — ASCENTIA | Zásady GDPR">
 <meta property="og:description" content="Zásady ochrany osobných údajov ASCENTIA s.r.o. v súlade s európskym nariadením GDPR.">
-<meta property="og:url" content="https://ascentia.sk/privacy">
+<meta property="og:url" content="https://www.ascentia.sk/privacy">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://ascentia.sk/og-image.webp">
+<meta property="og:image" content="https://www.ascentia.sk/og-image.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="sk_SK">
 <meta property="og:site_name" content="ASCENTIA s.r.o.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@marian_s_ai">
-<meta name="twitter:image" content="https://ascentia.sk/og-image.webp">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="twitter:image" content="https://www.ascentia.sk/og-image.webp">
+<!-- Fonts: system stack (no Google Fonts CDN — GDPR) -->
+<style>
+body { font-family: Georgia, 'Times New Roman', serif; }
+.inter, .section-label, .btn, nav a, .stat-label, .hero-tagline,
+.product-price, .form-label, .contact-details, .footer-tagline,
+.footer-col, .footer-bottom, .value-item h4, .value-item p,
+.service-card p, .service-card ul, .product-card ul,
+.social-link, input, textarea { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, .hero-logo { font-family: Georgia, 'Times New Roman', serif; }
+</style>
 <link rel="stylesheet" href="/css/main.css">
 
 <script type="application/ld+json">
@@ -37,11 +44,11 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://ascentia.sk/#organization",
+      "@id": "https://www.ascentia.sk/#organization",
       "name": "ASCENTIA s.r.o.",
-      "url": "https://ascentia.sk",
-      "logo": "https://ascentia.sk/logo-horizontal.svg",
-      "image": "https://ascentia.sk/og-image.webp",
+      "url": "https://www.ascentia.sk",
+      "logo": "https://www.ascentia.sk/logo-horizontal.svg",
+      "image": "https://www.ascentia.sk/og-image.webp",
       "description": "Autonomous AI company. AI agents, UAV operations, marketing automation, and EU AI Act compliance.",
       "address": {
         "@type": "PostalAddress",
@@ -51,9 +58,10 @@
         "postalCode": "821 08",
         "addressRegion": "Bratislavský kraj"
       },
-      "vatID": "SK2120700340",
-      "taxID": "2120700340",
-      "legalName": "ASCENTIA s.r.o.",
+      "vatID": "SK2120816071",
+      "taxID": "2120816071",
+      "identifier": "IČO 51858959",
+      "legalName": "ASCENTIA s. r. o.",
       "foundingDate": "2018-08-02",
       "founder": {
         "@type": "Person",
@@ -74,10 +82,10 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://ascentia.sk/#website",
-      "url": "https://ascentia.sk",
+      "@id": "https://www.ascentia.sk/#website",
+      "url": "https://www.ascentia.sk",
       "name": "ASCENTIA s.r.o.",
-      "publisher": { "@id": "https://ascentia.sk/#organization" }
+      "publisher": { "@id": "https://www.ascentia.sk/#organization" }
     }
   ]
 }
@@ -87,12 +95,12 @@
 </head>
 <body>
 
-<a href="#main-content" class="skip-link" style="position:absolute;top:-100%;left:0;z-index:10000;padding:0.5rem 1rem;background:var(--kyberbronz);color:white;font-family:Inter,sans-serif;font-size:0.8rem;transition:top 0.2s;">Preskočiť na obsah</a>
+<a href="#main-content" class="skip-link" style="position:absolute;top:-100%;left:0;z-index:10000;padding:0.5rem 1rem;background:var(--kyberbronz);color:white;font-family:Inter,sans-serif;font-size:0.8rem;transition:top 0.2s;" data-i18n="skipLink">Preskočiť na obsah</a>
 
 <!-- ===== NAV ===== -->
-<nav role="navigation" aria-label="Hlavná navigácia">
+<nav role="navigation" aria-label="Hlavná navigácia" data-i18n-aria="navAria">
   <div class="container">
-    <a href="/" class="logo" aria-label="ASCENTIA domov">
+    <a href="/" class="logo" aria-label="ASCENTIA domov" data-i18n-aria="logoAria">
       <svg viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text x="0" y="26" font-family="Times New Roman, Georgia, serif" font-size="28" font-weight="700" fill="#002147">A<span fill="#CD7F32" style="fill:#CD7F32">SCENTIA</span></text>
       </svg>
@@ -102,14 +110,14 @@
         <button class="lang-btn active" id="btnSk" onclick="switchLanguage('sk')">SK</button>
         <button class="lang-btn" id="btnEn" onclick="switchLanguage('en')">EN</button>
       </div>
-      <button class="hamburger" aria-label="Menu" aria-expanded="false" onclick="toggleMenu()">
+      <button class="hamburger" aria-label="Menu" data-i18n-aria="menuAria" aria-expanded="false" onclick="toggleMenu()">
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links" id="navLinks">
-        <a href="/services" class="nav-link">Služby</a>
-        <a href="/products" class="nav-link">Produkty</a>
-        <a href="/about" class="nav-link">O nás</a>
-        <a href="/contact" class="nav-link nav-cta">✦ Kontakt</a>
+        <a href="/services" class="nav-link" data-i18n="navServices">Služby</a>
+        <a href="/products" class="nav-link" data-i18n="navProducts">Produkty</a>
+        <a href="/about" class="nav-link" data-i18n="navAbout">O nás</a>
+        <a href="/contact" class="nav-link nav-cta" data-i18n="navContactCta">✦ Kontakt</a>
       </div>
     </div>
   </div>
@@ -130,10 +138,10 @@
     <div class="container" style="max-width: 800px;">
       <div style="font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--obsidian-light); line-height: 1.8;">
 
-        <p class="fade-in"><strong>Posledná aktualizácia:</strong> 1. január 2026</p>
+        <p class="fade-in"><strong>Posledná aktualizácia:</strong> 1. september 2026</p>
 
         <h2 class="fade-in" style="font-size: 1.5rem; margin-top: 2.5rem; color: var(--polar);">1. Prevádzkovateľ osobných údajov</h2>
-        <p class="fade-in">Spoločnosť <strong>ASCENTIA s.r.o.</strong>, IČO: 51858959, DIČ: 2120700340, so sídlom Klincová 37/B, 821 08 Bratislava, zapísaná v Obchodnom registri Mestského súdu Bratislava III, oddiel Sro, vložka č. 130384/B, je prevádzkovateľom vašich osobných údajov v zmysle čl. 4 bod 7 Nariadenia GDPR.</p>
+        <p class="fade-in">Spoločnosť <strong>ASCENTIA s. r. o.</strong>, IČO: 51858959, DIČ: 2120816071, IČ DPH: SK2120816071, so sídlom Klincová 37/B, 821 08 Bratislava-Ružinov, zapísaná v Obchodnom registri Mestského súdu Bratislava III, oddiel Sro, vložka č. 130384/B, konateľ Márian Stančík (koná samostatne), je prevádzkovateľom vašich osobných údajov v zmysle čl. 4 bod 7 Nariadenia GDPR.</p>
         <p class="fade-in">Kontaktovať nás môžete prostredníctvom emailu: <a href="mailto:marianstancik@agentmail.to" style="color: var(--kyberbronz); text-decoration: underline;">marianstancik@agentmail.to</a>.</p>
 
         <h2 class="fade-in" style="font-size: 1.5rem; margin-top: 2.5rem; color: var(--polar);">2. Rozsah spracúvaných osobných údajov</h2>
@@ -204,12 +212,11 @@
         <h2 class="fade-in" style="font-size: 1.5rem; margin-top: 2.5rem; color: var(--polar);">5. Príjemcovia osobných údajov</h2>
         <p class="fade-in">Vaše údaje môžu byť sprístupnené nasledujúcim kategóriám príjemcov:</p>
         <ul class="fade-in" style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
-          <li><strong>Hostingová infraštruktúra:</strong> Hetzner Online GmbH (Nürnberg, Nemecko)</li>
-          <li><strong>Emailová komunikácia:</strong> AgentMail (EÚ)</li>
-          <li><strong>Analytika:</strong> Google Analytics so zapnutou anonymizáciou IP</li>
+          <li><strong>Vercel Inc.</strong> — hosting webovej stránky a spracovanie kontaktného formulára (USA, certifikovaný v rámci EU-US Data Privacy Framework)</li>
+          <li><strong>AgentMail</strong> — doručovanie e-mailov z kontaktného formulára na marianstancik@agentmail.to</li>
           <li><strong>Štátne orgány:</strong> v zmysle platnej legislatívy (Finančná správa, súdy, orgány činné v trestnom konaní)</li>
         </ul>
-        <p class="fade-in">Všetci spracovatelia majú uzatvorené zmluvy o spracovaní osobných údajov (DPA) v súlade s čl. 28 GDPR. Dáta sú výhradne v EÚ, bez transferu do tretích krajín.</p>
+        <p class="fade-in">Webová stránka beží na Vercel. Prenos do USA sa opiera o EU-US Data Privacy Framework (čl. 45 GDPR). Nepoužívame Google Analytics ani iné marketingové/analytické nástroje tretích strán. Agentová infraštruktúra (Hermes) beží na Hetzner Cloud v EÚ; nie je sprostredkovateľom údajov z tohto webu.</p>
 
         <h2 class="fade-in" style="font-size: 1.5rem; margin-top: 2.5rem; color: var(--polar);">6. Vaše práva podľa GDPR</h2>
         <p class="fade-in">V súvislosti so spracovaním vašich osobných údajov máte nasledujúce práva:</p>
@@ -243,40 +250,15 @@
 
         <p class="fade-in">Svoje práva si môžete uplatniť kedykoľvek emailom na <a href="mailto:marianstancik@agentmail.to" style="color: var(--kyberbronz); text-decoration: underline;">marianstancik@agentmail.to</a>. Na vybavenie žiadosti odpovedáme do 30 dní. Ak nedôjde k vyhoveniu, máte právo podať sťažnosť na <strong>Úrad na ochranu osobných údajov SR</strong> (www.uoou.gov.sk).</p>
 
-        <h2 class="fade-in" style="font-size: 1.5rem; margin-top: 2.5rem; color: var(--polar);">7. Cookies</h2>
-        <p class="fade-in">Naša webstránka používa minimálne množstvo cookies. Konkrétne:</p>
-
-        <div class="fade-in" style="background: var(--biela); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.5rem; margin: 1rem 0;">
-          <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse;">
-            <thead>
-              <tr style="border-bottom: 1px solid var(--border-medium);">
-                <th style="text-align: left; padding: 0.5rem; font-weight: 600; color: var(--obsidian);">Typ</th>
-                <th style="text-align: left; padding: 0.5rem; font-weight: 600; color: var(--obsidian);">Účel</th>
-                <th style="text-align: left; padding: 0.5rem; font-weight: 600; color: var(--obsidian);">Doba</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom: 1px solid var(--border-light);">
-                <td style="padding: 0.5rem;">Technické (nevyhnutné)</td>
-                <td style="padding: 0.5rem;">Zabezpečenie funkčnosti stránky</td>
-                <td style="padding: 0.5rem;">Session</td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border-light);">
-                <td style="padding: 0.5rem;">Analytické (Google Analytics)</td>
-                <td style="padding: 0.5rem;">Meranie návštevnosti s anonymizáciou IP</td>
-                <td style="padding: 0.5rem;">14 mesiacov</td>
-              </tr>
-              <tr>
-                <td style="padding: 0.5rem;">Preferenčné</td>
-                <td style="padding: 0.5rem;">Zapamätanie jazyka (SK/EN)</td>
-                <td style="padding: 0.5rem;">1 rok</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="fade-in">Analytické cookies používame na základe vášho súhlasu (čl. 6 ods. 1 písm. a) GDPR, § 55 ods. 5 Zákona o elektronických komunikáciách). Súhlas môžete kedykoľvek odvolať nastavením prehliadača.</p>
-        <p class="fade-in">Návštevou stránky so zapnutým blokovaním cookies („Do Not Track") rešpektujeme toto nastavenie a nespúšťame analytické služby.</p>
+        <h2 class="fade-in" style="font-size: 1.5rem; margin-top: 2.5rem; color: var(--polar);">7. Cookies a lokálne úložisko</h2>
+        <p class="fade-in">Táto webová stránka <strong>nepoužíva Google Analytics, gtag, reklamné ani iné sledovacie cookies</strong>. Nespúšťame meranie návštevnosti treťou stranou a nezobrazujeme banner súhlasu s cookies, pretože nepoužívame cookies, ktoré by taký súhlas vyžadovali.</p>
+        <p class="fade-in">Čo reálne používame:</p>
+        <ul class="fade-in" style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+          <li><strong>Žiadne vlastné cookies.</strong> Skript <code>/js/main.js</code> neukladá cookies.</li>
+          <li><strong>localStorage</strong> kľúč <code>ascentia-lang</code> — zapamätá voľbu jazyka SK/EN v prehliadači. Nie je to cookie. Ide o funkčné úložisko nevyhnutné na zobrazenie zvoleného jazyka (čl. 6 ods. 1 písm. f) GDPR).</li>
+          <li><strong>Prevádzkové logy hostingu (Vercel):</strong> IP adresa, user-agent, dátum/čas a navštívená URL môžu byť spracované ako súčasť bezpečnej prevádzky webu (čl. 6 ods. 1 písm. f) GDPR), typicky v anonymizovanej alebo krátkodobej podobe.</li>
+        </ul>
+        <p class="fade-in">Ak v budúcnosti nasadíme neesenciálne cookies (napr. analytiku), doplníme banner súhlasu a aktualizujeme tieto zásady. Samostatná stránka <code>/cookies</code> neexistuje, preto na ňu neodkazujeme.</p>
 
         <h2 class="fade-in" style="font-size: 1.5rem; margin-top: 2.5rem; color: var(--polar);">8. Bezpečnosť údajov</h2>
         <p class="fade-in">Prijali sme primerané technické a organizačné opatrenia na zabezpečenie vašich osobných údajov:</p>
@@ -297,10 +279,10 @@
         <h2 class="fade-in" style="font-size: 1.5rem; margin-top: 2.5rem; color: var(--polar);">11. Kontakt</h2>
         <p class="fade-in">Vo všetkých záležitostiach týkajúcich sa ochrany osobných údajov nás kontaktujte:</p>
         <div class="fade-in" style="background: var(--biela); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.5rem; margin: 1rem 0;">
-          <p style="margin-bottom: 0.5rem;"><strong>ASCENTIA s.r.o.</strong></p>
+          <p style="margin-bottom: 0.5rem;"><strong>ASCENTIA s. r. o.</strong></p>
           <p style="margin-bottom: 0.25rem;">Email: <a href="mailto:marianstancik@agentmail.to" style="color: var(--kyberbronz); text-decoration: underline;">marianstancik@agentmail.to</a></p>
-          <p style="margin-bottom: 0.25rem;">IČO: 51858959 | DIČ: 2120700340</p>
-          <p style="margin-bottom: 0.25rem;">Web: <a href="https://ascentia.sk" style="color: var(--kyberbronz); text-decoration: underline;">ascentia.sk</a></p>
+          <p style="margin-bottom: 0.25rem;">IČO: 51858959 | DIČ: 2120816071 | IČ DPH: SK2120816071</p>
+          <p style="margin-bottom: 0.25rem;">Web: <a href="https://www.ascentia.sk" style="color: var(--kyberbronz); text-decoration: underline;">www.ascentia.sk</a></p>
         </div>
         <p class="fade-in">Dozorný orgán: <strong>Úrad na ochranu osobných údajov Slovenskej republiky</strong>, Hraničná 12, 820 07 Bratislava, www.uoou.gov.sk.</p>
 
@@ -334,29 +316,39 @@
         </div>
       </div>
       <div class="footer-col">
-        <h4>Navigácia</h4>
-        <a href="/services">Služby</a>
-        <a href="/products">Produkty</a>
-        <a href="/about">O nás</a>
-        <a href="/contact">Kontakt</a>
-        <a href="/privacy">Ochrana súkromia</a>
+        <h4 data-i18n="fCol1Title">Navigácia</h4>
+        <a href="/services" data-i18n="navServices">Služby</a>
+        <a href="/products" data-i18n="navProducts">Produkty</a>
+        <a href="/about" data-i18n="navAbout">O nás</a>
+        <a href="/contact" data-i18n="navContact">Kontakt</a>
+        <a href="/privacy" data-i18n="navPrivacy">Ochrana súkromia</a>
+        <a href="/terms" data-i18n="navTerms">Podmienky</a>
+        <a href="/disclaimer" data-i18n="navDisclaimer">Zrieknutie zodpovednosti</a>
       </div>
       <div class="footer-col">
-        <h4>Produkty</h4>
+        <h4 data-i18n="fCol2Title">Produkty</h4>
         <a href="/products">Hermes Agent</a>
         <a href="/products">AI Marketing Agents</a>
         <a href="/products">Voice Agent MVP</a>
         <a href="/products">UAV Monitoring</a>
       </div>
       <div class="footer-col">
-        <h4>Kontakt</h4>
+        <h4 data-i18n="fCol3Title">Kontakt</h4>
         <a href="mailto:marianstancik@agentmail.to">marianstancik@agentmail.to</a>
         <a href="https://github.com/Abra7abra7/ascentia-web" target="_blank" rel="noopener">Website Source</a>
-        <a href="https://ascentia.sk" target="_blank">ascentia.sk</a>
+        <a href="https://www.ascentia.sk" target="_blank">www.ascentia.sk</a>
       </div>
     </div>
+
+    <div class="footer-imprint">
+      <p>
+        <strong>ASCENTIA s. r. o.</strong><br>
+        <span data-i18n="imprintSeat">Sídlo:</span> Klincová 37/B, 821 08 Bratislava-Ružinov<br>
+        IČO: 51858959 · <a href="mailto:marianstancik@agentmail.to">marianstancik@agentmail.to</a>
+      </p>
+    </div>
     <div class="footer-divider">
-      <p>© 2026 <a href="https://ascentia.sk">ASCENTIA s.r.o.</a> — Build better. Stay legal.</p>
+      <p>© 2026 <a href="https://www.ascentia.sk">ASCENTIA s.r.o.</a> — Build better. Stay legal.</p>
       <p class="footer-tag">Built with <span class="bronze">✦</span> by Hermes Agent</p>
     </div>
   </div>

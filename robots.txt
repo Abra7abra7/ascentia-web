@@ -32,4 +32,4 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://ascentia.sk/sitemap.xml
+Sitemap: https://www.ascentia.sk/sitemap.xml

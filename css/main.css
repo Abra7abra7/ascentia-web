@@ -592,3 +592,14 @@ footer {
   nav .cta-btn { display: none; } /* hide CTA button on tiny screens */
   h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
 }
+/* ===== LEGAL IMPRINT ===== */
+.footer-imprint {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.55);
+  margin: 0 0 1.5rem;
+  max-width: 520px;
+}
+.footer-imprint strong { color: #fff; font-weight: 600; }
+.footer-imprint a { color: var(--kyberbronz-light); text-decoration: underline; }
