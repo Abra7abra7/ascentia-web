@@ -1,3 +1,5 @@
+> **Correction (1 September 2026):** RegisterUZ DIČ is **2120816071** (tax ID, **not** VAT ID / IČ DPH). ASCENTIA s. r. o. is **not** a VAT payer (neplatiteľ DPH). ORSR (https://www.orsr.sk/vypis.asp?ID=438027&SID=2&P=0) has no IČ DPH field. FinStat (https://finstat.sk/51858959) has no IČ DPH line and states: „Firma odobratá zo zoznamu platcov dph dňa nedeľa 1. januára 2023.“ Do **not** display SK2120816071 or IČ DPH. The ID 2120700340 / SK2120700340 previously shown on the site and in this audit was also wrong and must not be used.
+
 # Legal Compliance Audit Report
 
 **Date:** August 26, 2026  
@@ -83,8 +85,8 @@ Both sites have a contact form collecting: **name, email, message** → POST to 
 | Requirement | Status | Notes |
 |------------|--------|-------|
 | IČO 51858959 displayed | ✅ **CORRECT** | Shown in contact section and schema.org markup |
-| DIČ 2120700340 displayed | ✅ **CORRECT** | Shown in contact section and schema.org markup |
-| IČ DPH SK2120700340 | ✅ **CORRECT** | Shown in contact section and schema.org markup |
+| DIČ 2120816071 displayed | ✅ **CORRECT** | Shown in contact section and schema.org markup |
+| IČ DPH / SK2120816071 | ❌ **MUST NOT BE SHOWN** | Company is not a VAT payer (neplatiteľ DPH). Verified 1 Sep 2026: ORSR has no IČ DPH field; FinStat has no IČ DPH line and notes removal from VAT register on 1 Jan 2023. |
 | Company name "ASCENTIA s.r.o." | ✅ **CORRECT** | Used consistently throughout site |
 | Registered office address | ❌ **MISSING** | No physical address shown anywhere. Schema.org markup only shows `addressCountry: SK` without street/office address. |
 | Founding date (2018-10-24) | ✅ **PRESENT** | In schema.org markup |
@@ -101,12 +103,12 @@ Both sites have a contact form collecting: **name, email, message** → POST to 
 
 | Product | Price Shown | VAT Info | Status |
 |---------|-------------|----------|--------|
-| Hermes Agent | €1,500 setup + €500/mo | ❌ **No VAT mention** | ❌ **Non-compliant** |
-| AI Marketing Agents | €1,150 setup + €265/mo | ❌ **No VAT mention** | ❌ **Non-compliant** |
-| Voice Agent MVP | €800 setup + €165/mo | ❌ **No VAT mention** | ❌ **Non-compliant** |
-| UAV Monitoring | €180 / 2h letu | ❌ **No VAT mention** | ❌ **Non-compliant** |
+| Hermes Agent | €1,500 setup + €500/mo | Must say prices as listed; nie je platiteľom DPH | Do not claim bez DPH / platiteľ DPH |
+| AI Marketing Agents | €1,150 setup + €265/mo | Must say prices as listed; nie je platiteľom DPH | Do not claim bez DPH / platiteľ DPH |
+| Voice Agent MVP | €800 setup + €165/mo | Must say prices as listed; nie je platiteľom DPH | Do not claim bez DPH / platiteľ DPH |
+| UAV Monitoring | €180 / 2h letu | Must say prices as listed; nie je platiteľom DPH | Do not claim bez DPH / platiteľ DPH |
 
-**Requirement:** Per Slovak law (Z. 222/2004 Z.z. o DPH) and EU Consumer Rights Directive, all prices must clearly state whether VAT (DPH) is included or excluded. As a Slovak VAT-registered company (IČ DPH: SK2120700340), ASCENTIA must specify whether prices are with or without VAT.
+**Requirement:** Prices must not claim “bez DPH” as if the company charged VAT on top. ASCENTIA s. r. o. is **not** a VAT payer (neplatiteľ DPH, verified 1 Sep 2026). Correct wording: prices as listed; spoločnosť nie je platiteľom DPH. Do **not** invent that they add VAT.
 
 ### 3.2 Seller Identification
 
@@ -114,8 +116,8 @@ Both sites have a contact form collecting: **name, email, message** → POST to 
 |------------|--------|-------|
 | Company name | ✅ **CORRECT** | ASCENTIA s.r.o. |
 | IČO | ✅ **CORRECT** | 51858959 |
-| DIČ | ✅ **CORRECT** | 2120700340 |
-| IČ DPH | ✅ **CORRECT** | SK2120700340 |
+| DIČ | ✅ **CORRECT** | 2120816071 |
+| IČ DPH | ❌ **MUST NOT BE SHOWN** | Not a VAT payer; no IČ DPH |
 | Registered office | ❌ **MISSING** | No physical address |
 | Register info (Obchodný register) | ❌ **MISSING** | No mention of which register the company is registered in + file number |
 
@@ -222,7 +224,7 @@ Create a privacy page (e.g., `/privacy-policy.html`) on both sites with the foll
 <p>
   <!-- ascentia.sk version -->
   <strong>ASCENTIA s.r.o.</strong><br>
-  IČO: 51858959, DIČ: 2120700340, IČ DPH: SK2120700340<br>
+  IČO: 51858959, DIČ: 2120816071 (spoločnosť nie je platiteľom DPH)<br>
   Email: marianstancik@agentmail.to
 </p>
 
@@ -299,14 +301,13 @@ Replace the current Google Fonts CDN links in `<head>` with self-hosted versions
 
 **Replace with:** Download Cormorant Garamond + Inter TTF files, convert to WOFF2, and serve them locally with `@font-face` declarations in CSS.
 
-### 🔴 PRIORITY 4 — Add VAT Info to Prices on ascentia.sk
+### 🔴 PRIORITY 4 — Correct VAT status on prices (ascentia.sk)
 
-Add VAT disclaimer near pricing:
+Company is **not** a VAT payer. Do **not** say “bez DPH” / “je platiteľ DPH” / show IČ DPH SK2120816071. Use:
 
 ```html
 <p class="vat-disclaimer" style="font-size: 0.75rem; color: #666; margin-top: 2rem; text-align: center;">
-  Všetky ceny sú uvedené bez DPH (DPH bude pridaná podľa platnej sadzby).
-  ASCENTIA s.r.o. je platiteľ DPH (IČ DPH: SK2120700340).
+  Ceny sú uvedené tak, ako sú zobrazené. Spoločnosť nie je platiteľom DPH.
 </p>
 ```
 
@@ -361,7 +362,7 @@ Create a dedicated privacy inbox: `gdpr@ascentia.sk` (for ascentia.sk) and ensur
 | **Google Fonts** | ✅ Self-hosted | ❌ CDN loading (violates Munich ruling) |
 | **Cookies** | ✅ None | ✅ None |
 | **Company Info** | N/A (personal) | ✅ IČO/DIČ correct, ❌ address missing |
-| **Pricing Compliance** | N/A (no sales) | ❌ No VAT info on prices |
+| **Pricing Compliance** | N/A (no sales) | Must state prices as listed; spoločnosť nie je platiteľom DPH (not a VAT payer) |
 | **Consumer Rights** | N/A (not e-commerce) | ❌ Withdrawal period/complaints missing |
 | **AI Act Transparency** | ❌ Missing | ❌ Missing |
 | **Processor Disclosure** | ❌ Missing | ❌ Missing |
@@ -372,7 +373,7 @@ Create a dedicated privacy inbox: `gdpr@ascentia.sk` (for ascentia.sk) and ensur
 1. 🔴 **Add Privacy Policy** to both sites (template above)
 2. 🔴 **Add privacy notice** near contact forms
 3. 🔴 **Self-host Google Fonts** on ascentia.sk (or add to Privacy Policy)
-4. 🔴 **Add VAT disclaimer** to pricing on ascentia.sk
+4. 🔴 **Correct VAT status** on pricing (nie je platiteľom DPH; prices as listed)
 5. 🔴 **Add registered office** to ascentia.sk contact section
 6. 🟡 **Add AI Act disclaimer** to both sites
 7. 🟡 **Create Terms of Service** for ascentia.sk
