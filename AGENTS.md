@@ -1,3 +1,68 @@
+# AGENTS.md — ASCENTIA corporate website (www.ascentia.sk)
+
+Instructions for any coding agent (Jules, OpenCode, Hermes, Grok Bot, Claude, Codex, …). Read the **Agent quick guide** first; the original project brief follows below it.
+
+## Agent quick guide
+
+### Project
+
+- **Purpose:** corporate website of **ASCENTIA s.r.o.** (company of Marián Stančík, CEO) — AI agents, marketing automation, UAV operations, AI compliance. Company data is in the section below and in `press-kit/COMPANY-INFO.md`.
+- **Hosting:** Vercel, connected to this repo (commits get a "Vercel" status, PRs get a preview URL). Production branch: `master` (this repo's default branch).
+
+### Stack
+
+- Zero-build static site: HTML + `css/main.css` + `js/main.js`. No framework, no package manager, no build step.
+- `vercel.json`: `cleanUrls`, security headers, caching, redirects.
+
+### Commands
+
+There are **no build, test or lint scripts** in this repo. Local preview:
+
+```bash
+python3 -m http.server 8080    # then open http://localhost:8080/index.html (clean URLs work only on Vercel)
+```
+
+Before opening a PR, check the files manually against the pre-deploy checklist in section 6.2 below and on the Vercel preview. TODO: confirm a validator (e.g. HTML/JSON-LD check) if one should become mandatory.
+
+### Structure
+
+```
+index.html, about.html, services.html, products.html, contact.html   # main pages
+privacy.html, terms.html, disclaimer.html                           # legal pages — change only with approval
+css/main.css, js/main.js
+press-kit/        # brand manual, company info, logos, banners, zip
+robots.txt, sitemap.xml, llms.txt, llms-full.txt, vercel.json
+legal-compliance-audit.md
+```
+
+### Conventions
+
+- Primary language **Slovak** (`<html lang="sk">`, texts marked with `data-i18n`). The planned `js/i18n.js` (SK/EN) is **not** in the repo yet — TODO: confirm the EN strategy.
+- Brand: Polar `#002147` + Kyberbronz `#CD7F32`, Cormorant Garamond + Inter (see below). Company identifiers (IČO, DIČ, VAT status, registry) must match the official register — never edit them from memory.
+- Commit messages: emoji prefix + short SK/EN description (section 6.1).
+- When you add or rename a page, update `sitemap.xml`, `llms.txt` / `llms-full.txt` and internal links.
+
+### Working rules (mandatory for every agent: Jules, OpenCode, Hermes, Grok Bot, Claude, Codex, …)
+
+- **Branch + Pull Request only.** Create a feature branch (`feat/…`, `fix/…`, `docs/…`, `seo/…`), open a PR and wait for review. **Never push or force-push to `main`/the default branch** and never merge your own PR.
+- **No secrets in git.** Never commit `.env*`, API keys, tokens, passwords, private keys, server IP addresses, SSH details or personal data. Use the hosting platform's environment variables; reference variables by **name only**. If you find a secret in the repo, stop and report it — do not copy it anywhere.
+- **GDPR / privacy first.** Treat any personal data (leads, customers, patients, form submissions) as confidential. No new trackers, cookies, analytics, third-party scripts or data processors without explicit approval; keep privacy/cookie pages consistent with what the code actually does.
+- **The client owns the domain, the content and the data.** Do not change DNS, domains, hosting settings, payment settings, legal texts or published client content without explicit approval.
+- **No destructive changes without approval.** No deleting pages/data/files in bulk, no history rewrites, no dependency major-version upgrades, no production deploys, no outgoing emails/posts from tests.
+- **Invent nothing.** If a fact (price, company detail, legal statement, metric) is not in the repo or the task, leave a `TODO: confirm` instead of guessing.
+- **Small, focused diffs.** Reuse existing patterns and dependencies; do not add a new dependency if an existing one covers the need.
+
+### Definition of Done
+
+1. All checks listed under *Commands* that exist for this repo pass locally (build, tests, lint/verification).
+2. The **preview deploy** of the PR branch was opened and checked (desktop + mobile) — or, if this repo has no preview, the reason is stated in the PR.
+3. The PR description contains: a short summary of *what* and *why*, the list of changed areas, how it was tested, the preview URL, and any `TODO: confirm` items or risks.
+4. Nothing goes live until Marián approves (**ÁNO**) and merges the PR.
+
+---
+
+# Project reference (original brief)
+
 # ASCENTIA Corporate Website
 
 **Owner:** Marian Stancik — CEO @ ASCENTIA s.r.o.  
@@ -20,7 +85,7 @@ Corporate website for **ASCENTIA s.r.o.** — an autonomous AI company at the in
 
 Built on the same zero-build architecture as marianstancik.dev:
 - **Vanilla HTML/CSS/JS** — no frameworks, no build tools
-- **Vercel** deployment (Git push → main)
+- **Vercel** deployment (merge of an approved PR into `master` → production; PRs get previews)
 - **SEO-first** — schema.org, GEO/llms.txt, sitemap
 - **Responsive** — mobile-first, iPhone compatible
 - **Security-first** — CSP headers, no credentials in repo
@@ -74,7 +139,7 @@ A fully functional, responsive corporate website for ASCENTIA s.r.o. deployed on
 | Decision | Resolution |
 |----------|-----------|
 | Architecture | Zero-build vanilla HTML/CSS/JS (same as marianstancik.dev) |
-| Deployment | Vercel, Git push → main, `cleanUrls: true` |
+| Deployment | Vercel; approved PR merged into `master` → production; `cleanUrls: true` |
 | Design | Dior-style: minimalist, monochrome + bronze accent, serif typography |
 | Pages | Single-page w/ sections vs multi-page TBD (depends on content depth) |
 | Media | Local in `/images/`, WebP + JPEG fallback via `<picture>` |
@@ -228,8 +293,8 @@ Emoji prefix + SK/EN description:
 - [ ] llms.txt present and valid
 
 ### 6.3 Branch Strategy
-- `main` — production (Vercel auto-deploy)
-- Direct commits to main (single-developer, trunk-based)
+- `master` — production (Vercel auto-deploy)
+- All changes go through a feature branch + Pull Request with a Vercel preview; merge only after Marián's ÁNO. No direct commits to `master`.
 
 ---
 
@@ -261,7 +326,7 @@ Emoji prefix + SK/EN description:
 - [ ] Responsive: mobile (480px), tablet (768px), desktop (1024px)
 - [ ] Animations: fade-in on scroll, card hover effects
 - [ ] Playwright visual test
-- [ ] Git push → Vercel
+- [ ] Approved PR merged → Vercel production
 - [ ] DNS: www.ascentia.sk (canonical); apex redirects to www
 
 ---
